@@ -10,24 +10,28 @@ import UIKit
 class GameViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     
+    lazy var game = Game(countItems: buttons.count)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupScreen()
     }
     
     @IBAction func pressButton(_ sender: UIButton) {
+        sender.layer.borderWidth = 8
+        sender.layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
         print(sender.tag)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupScreen() {
+        for index in game.items.indices {
+            buttons[index].setTitle(game.items[index].title, for: .normal)
+            let redColor = game.items[index].redColor
+            let greenColor = game.items[index].greenColor
+            let blueColor = game.items[index].blueColor
+            buttons[index].backgroundColor = UIColor(red: CGFloat(redColor/255), green: CGFloat(greenColor/255), blue: CGFloat(blueColor/255), alpha: 1)
+            buttons[index].isHidden = false
+        }
     }
-    */
-
+  
 }
