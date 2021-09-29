@@ -7,22 +7,29 @@
 
 import Foundation
 
+enum statusGame {
+    case start
+    case win
+}
+
 class Game{
     
     struct Item{
-        var title: String
-        var redColor: Int
-        var greenColor: Int
-        var blueColor: Int
-        var isFound: Bool = false
+        var redColor: Float
+        var greenColor: Float
+        var blueColor: Float
+        var isSelected: Bool = false
     }
     
-    private let data = Array(1...99)
     private let redColorData = Array(0...255)
     private let greenColorData = Array(0...255)
     private let blueColorData = Array(0...255)
     var items: [Item] = []
     private var countItems: Int
+    
+    var status: statusGame = .start
+    var firstSelectedButtonIndex: Int?
+    var secondSelectedButtonIndex: Int?
     
     init(countItems: Int) {
         self.countItems = countItems
@@ -30,16 +37,50 @@ class Game{
     }
     
     private func setupGame(){
-        var digits = data.shuffled()
         var redColor = redColorData.shuffled()
         var greenColor = greenColorData.shuffled()
         var blueColor = blueColorData.shuffled()
         while items.count < countItems {
-            //var buttonColor: UIColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1)
-            let item = Item(title: String(digits.removeFirst()), redColor: redColor.removeFirst(), greenColor: greenColor.removeFirst(), blueColor: blueColor.removeFirst())
-            print("redColor: \(item.redColor), greenColor: \(item.greenColor), blueColor: \(item.blueColor)")
-//            let item = Item(title: String(digits.removeFirst()), redColor: 255, greenColor: 0, blueColor: 0)
+            let item = Item(redColor: Float(redColor.removeFirst()), greenColor: Float(greenColor.removeFirst()), blueColor: Float(blueColor.removeFirst()))
             items.append(item)
+            if items.count < countItems {
+                items.append(item)
+            }
+        }
+        items.shuffle()
+    }
+    
+    func check(index: Int){
+        var firstSelectedButtonIndexIsFilled = false
+        if firstSelectedButtonIndex == nil {
+            firstSelectedButtonIndex = index
+            firstSelectedButtonIndexIsFilled = true
+        }
+        print(!firstSelectedButtonIndexIsFilled && secondSelectedButtonIndex == nil)
+        if !firstSelectedButtonIndexIsFilled && secondSelectedButtonIndex == nil {
+            secondSelectedButtonIndex = index
+        }
+        
+        if firstSelectedButtonIndex != nil && secondSelectedButtonIndex != nil {
+            if items[firstSelectedButtonIndex!].redColor == items[secondSelectedButtonIndex!].redColor
+                && items[firstSelectedButtonIndex!].greenColor == items[secondSelectedButtonIndex!].greenColor
+                && items[firstSelectedButtonIndex!].blueColor == items[secondSelectedButtonIndex!].blueColor {
+                items[firstSelectedButtonIndex!].isSelected = true
+                items[secondSelectedButtonIndex!].isSelected = true
+                firstSelectedButtonIndex = nil
+                secondSelectedButtonIndex = nil
+            }
+        }
+    
+        var UnselectedButtons = 0
+        for index in items.indices {
+            if !items[index].isSelected{
+                UnselectedButtons += 1
+            }
+        }
+       
+        if UnselectedButtons <= 1 {
+            status = .win
         }
     }
 }
