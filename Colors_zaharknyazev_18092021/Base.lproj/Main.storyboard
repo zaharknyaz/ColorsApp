@@ -17,243 +17,277 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Игра началась" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C37-fF-PRM">
-                                <rect key="frame" x="116" y="83" width="197" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sq-rF-IKn">
-                                <rect key="frame" x="53" y="167" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="XIQ-H8-kpO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ5-18-04L">
-                                <rect key="frame" x="123" y="167" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98259460034013602" green="0.33088860544217685" blue="0.23331207482993196" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="S6C-ni-fI2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-3d-Jjn">
-                                <rect key="frame" x="193" y="167" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CSD-pf-FNW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-RX-GhA">
-                                <rect key="frame" x="262" y="167" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="KQh-aZ-dLE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-aJ-j6R">
-                                <rect key="frame" x="330" y="167" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bHa-yB-2P7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYC-ao-xXu">
-                                <rect key="frame" x="53" y="233" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="SMg-0Y-jrM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0A-W4-fqZ">
-                                <rect key="frame" x="123" y="233" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Kpg-vs-OUU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-KO-0Pe">
-                                <rect key="frame" x="193" y="233" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="zjF-0W-or8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ii-fn-RVh">
-                                <rect key="frame" x="262" y="233" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="ker-HK-0Dj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-sV-wLi">
-                                <rect key="frame" x="330" y="233" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CwJ-6C-Oqd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-Og-hCY">
-                                <rect key="frame" x="53" y="299" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31122448979591838" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="T1L-mL-R13"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-e5-SwI">
-                                <rect key="frame" x="123" y="299" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.89963329081632648" green="0.332562712585034" blue="0.79320790816326525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="oJT-ib-OZ0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-MR-5js">
-                                <rect key="frame" x="193" y="299" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.66369047619047616" green="0.90274234693877553" blue="0.34192833383353333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="rmg-qR-ZoX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v27-Cz-FIb">
-                                <rect key="frame" x="262" y="299" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90274234693877553" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="dos-2K-y2n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E1-8rO">
-                                <rect key="frame" x="330" y="299" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20793473639455781" green="0.076344600340136057" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CCd-8h-sfN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-un-QuB">
-                                <rect key="frame" x="53" y="365" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98511904761904767" green="0.44842155612244899" blue="0.19913903061224489" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Sbl-pG-kkL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-uk-S0K">
-                                <rect key="frame" x="123" y="365" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57695578231292521" green="0.56097782863145262" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="lXu-oz-3xs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYh-ct-jjg">
-                                <rect key="frame" x="193" y="365" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43029868197278914" green="0.0" blue="0.22467580782312926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bKt-x2-Blc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-SZ-RQl">
-                                <rect key="frame" x="262" y="365" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30739795918367346" green="0.56954187925170063" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CDi-JZ-xW8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-0K-TIR">
-                                <rect key="frame" x="330" y="365" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.61801126700680276" green="0.56954187925170063" blue="0.22935267857142858" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="YfC-ae-PlG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-VO-Ehz">
-                                <rect key="frame" x="53" y="430" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32126913265306123" green="0.13509778911564627" blue="0.46776679421768708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="9mG-qh-FvI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-6B-Mx4">
-                                <rect key="frame" x="123" y="430" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.064652423469387751" green="0.090454931972789115" blue="0.87848107993197277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="jnU-f6-7Nb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-QO-88Y">
-                                <rect key="frame" x="193" y="430" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.76087278661464586" green="0.91810849339735889" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="UBH-2O-Buv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-bw-S7F">
-                                <rect key="frame" x="262" y="430" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95241190226090455" green="0.91810849339735889" blue="0.61354698129251706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="csc-76-zoM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJR-Ko-w0l">
-                                <rect key="frame" x="330" y="430" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.013578869047619048" green="0.47571215986394561" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="0OH-I1-XkC"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-OV-eDf">
+                                <rect key="frame" x="135.33333333333337" y="64" width="157.66666666666663" height="62.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра началась" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C37-fF-PRM">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH1-Va-d4j">
+                                        <rect key="frame" x="73.333333333333314" y="36.333333333333329" width="10.666666666666671" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqZ-ws-5l1">
+                                        <rect key="frame" x="22.333333333333314" y="62.666666666666671" width="113" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Новая игра"/>
+                                        <connections>
+                                            <action selector="newGame:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="KbW-Wz-ubw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-9m-7ty">
+                                <rect key="frame" x="10" y="136.66666666666669" width="408" height="745.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-lm-Iet">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="141"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sq-rF-IKn">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="XIQ-H8-kpO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ5-18-04L">
+                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" red="0.98259460034013602" green="0.33088860544217685" blue="0.23331207482993196" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="S6C-ni-fI2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-3d-Jjn">
+                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CSD-pf-FNW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-RX-GhA">
+                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="KQh-aZ-dLE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-aJ-j6R">
+                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bHa-yB-2P7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-hy-TnT">
+                                        <rect key="frame" x="0.0" y="151.00000000000003" width="408" height="140.99999999999997"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYC-ao-xXu">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="SMg-0Y-jrM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0A-W4-fqZ">
+                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Kpg-vs-OUU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-KO-0Pe">
+                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="zjF-0W-or8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ii-fn-RVh">
+                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="ker-HK-0Dj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-sV-wLi">
+                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="141"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CwJ-6C-Oqd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-y4-sM0">
+                                        <rect key="frame" x="0.0" y="302" width="408" height="141.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-Og-hCY">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="141.33333333333334"/>
+                                                <color key="backgroundColor" red="0.31122448979591838" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="T1L-mL-R13"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-e5-SwI">
+                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="141.33333333333334"/>
+                                                <color key="backgroundColor" red="0.89963329081632648" green="0.332562712585034" blue="0.79320790816326525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="oJT-ib-OZ0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-MR-5js">
+                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="141.33333333333334"/>
+                                                <color key="backgroundColor" red="0.66369047619047616" green="0.90274234693877553" blue="0.34192833383353333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="rmg-qR-ZoX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v27-Cz-FIb">
+                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="141.33333333333334"/>
+                                                <color key="backgroundColor" red="1" green="0.90274234693877553" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="dos-2K-y2n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E1-8rO">
+                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="141.33333333333334"/>
+                                                <color key="backgroundColor" red="0.20793473639455781" green="0.076344600340136057" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CCd-8h-sfN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3n8-aW-lNS">
+                                        <rect key="frame" x="0.0" y="453.33333333333337" width="408" height="141"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-un-QuB">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="141"/>
+                                                <color key="backgroundColor" red="0.98511904761904767" green="0.44842155612244899" blue="0.19913903061224489" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Sbl-pG-kkL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-uk-S0K">
+                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" red="0.57695578231292521" green="0.56097782863145262" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="lXu-oz-3xs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYh-ct-jjg">
+                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="141"/>
+                                                <color key="backgroundColor" red="0.43029868197278914" green="0.0" blue="0.22467580782312926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bKt-x2-Blc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-SZ-RQl">
+                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" red="0.30739795918367346" green="0.56954187925170063" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CDi-JZ-xW8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-0K-TIR">
+                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="141"/>
+                                                <color key="backgroundColor" red="0.61801126700680276" green="0.56954187925170063" blue="0.22935267857142858" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="YfC-ae-PlG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nDN-NE-fJj">
+                                        <rect key="frame" x="0.0" y="604.33333333333337" width="408" height="141"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-VO-Ehz">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="141"/>
+                                                <color key="backgroundColor" red="0.32126913265306123" green="0.13509778911564627" blue="0.46776679421768708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="9mG-qh-FvI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-6B-Mx4">
+                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" red="0.064652423469387751" green="0.090454931972789115" blue="0.87848107993197277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="jnU-f6-7Nb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-QO-88Y">
+                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="141"/>
+                                                <color key="backgroundColor" red="0.76087278661464586" green="0.91810849339735889" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="UBH-2O-Buv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-bw-S7F">
+                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="141"/>
+                                                <color key="backgroundColor" red="0.95241190226090455" green="0.91810849339735889" blue="0.61354698129251706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="csc-76-zoM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJR-Ko-w0l">
+                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="141"/>
+                                                <color key="backgroundColor" red="0.013578869047619048" green="0.47571215986394561" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="0OH-I1-XkC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q0w-f6-Z8i"/>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Nuz-OV-eDf" firstAttribute="top" secondItem="q0w-f6-Z8i" secondAttribute="top" constant="20" id="NMs-ju-XnU"/>
+                            <constraint firstItem="q0w-f6-Z8i" firstAttribute="bottom" secondItem="Rdv-9m-7ty" secondAttribute="bottom" constant="10" id="V7v-4r-DGb"/>
+                            <constraint firstItem="Rdv-9m-7ty" firstAttribute="top" secondItem="Nuz-OV-eDf" secondAttribute="bottom" constant="10" id="VcD-hN-KCs"/>
+                            <constraint firstItem="Rdv-9m-7ty" firstAttribute="leading" secondItem="q0w-f6-Z8i" secondAttribute="leading" constant="10" id="fyY-A4-e2I"/>
+                            <constraint firstItem="Nuz-OV-eDf" firstAttribute="centerX" secondItem="q0w-f6-Z8i" secondAttribute="centerX" id="mVo-wA-kHM"/>
+                            <constraint firstItem="q0w-f6-Z8i" firstAttribute="trailing" secondItem="Rdv-9m-7ty" secondAttribute="trailing" constant="10" id="rrs-z6-rC9"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="newGameButton" destination="NqZ-ws-5l1" id="yqN-o4-eHN"/>
+                        <outlet property="statusLabel" destination="C37-fF-PRM" id="RtR-ug-PHu"/>
+                        <outlet property="timerLabel" destination="cH1-Va-d4j" id="EHh-Ee-PtI"/>
                         <outletCollection property="buttons" destination="8sq-rF-IKn" collectionClass="NSMutableArray" id="MD2-X5-f1D"/>
-                        <outletCollection property="buttons" destination="MJ5-18-04L" collectionClass="NSMutableArray" id="Z4r-qb-V0M"/>
                         <outletCollection property="buttons" destination="Jda-3d-Jjn" collectionClass="NSMutableArray" id="OHg-To-B2c"/>
+                        <outletCollection property="buttons" destination="MJ5-18-04L" collectionClass="NSMutableArray" id="Z4r-qb-V0M"/>
                         <outletCollection property="buttons" destination="bcm-RX-GhA" collectionClass="NSMutableArray" id="3FA-4c-Acd"/>
                         <outletCollection property="buttons" destination="Ct3-aJ-j6R" collectionClass="NSMutableArray" id="qZe-kT-kZe"/>
                         <outletCollection property="buttons" destination="iYC-ao-xXu" collectionClass="NSMutableArray" id="vDq-Ts-JdR"/>
+                        <outletCollection property="buttons" destination="Ru3-sV-wLi" collectionClass="NSMutableArray" id="wJm-XI-f3U"/>
+                        <outletCollection property="buttons" destination="5ii-fn-RVh" collectionClass="NSMutableArray" id="5EE-vB-rJ2"/>
                         <outletCollection property="buttons" destination="L0A-W4-fqZ" collectionClass="NSMutableArray" id="7RH-R8-Jjf"/>
                         <outletCollection property="buttons" destination="7eV-KO-0Pe" collectionClass="NSMutableArray" id="PWK-nz-QeZ"/>
-                        <outletCollection property="buttons" destination="5ii-fn-RVh" collectionClass="NSMutableArray" id="5EE-vB-rJ2"/>
-                        <outletCollection property="buttons" destination="Ru3-sV-wLi" collectionClass="NSMutableArray" id="wJm-XI-f3U"/>
-                        <outletCollection property="buttons" destination="iaw-Og-hCY" collectionClass="NSMutableArray" id="84X-DJ-qtZ"/>
-                        <outletCollection property="buttons" destination="eD2-e5-SwI" collectionClass="NSMutableArray" id="MuD-KG-VYK"/>
-                        <outletCollection property="buttons" destination="V2R-MR-5js" collectionClass="NSMutableArray" id="XhD-zr-WCg"/>
-                        <outletCollection property="buttons" destination="v27-Cz-FIb" collectionClass="NSMutableArray" id="fzA-KY-stP"/>
                         <outletCollection property="buttons" destination="ZBC-E1-8rO" collectionClass="NSMutableArray" id="0N4-9a-njX"/>
-                        <outletCollection property="buttons" destination="XzN-un-QuB" collectionClass="NSMutableArray" id="r7V-4v-kJ0"/>
-                        <outletCollection property="buttons" destination="XgB-uk-S0K" collectionClass="NSMutableArray" id="caH-oj-5tS"/>
+                        <outletCollection property="buttons" destination="eD2-e5-SwI" collectionClass="NSMutableArray" id="MuD-KG-VYK"/>
+                        <outletCollection property="buttons" destination="v27-Cz-FIb" collectionClass="NSMutableArray" id="fzA-KY-stP"/>
+                        <outletCollection property="buttons" destination="iaw-Og-hCY" collectionClass="NSMutableArray" id="84X-DJ-qtZ"/>
+                        <outletCollection property="buttons" destination="V2R-MR-5js" collectionClass="NSMutableArray" id="XhD-zr-WCg"/>
                         <outletCollection property="buttons" destination="tYh-ct-jjg" collectionClass="NSMutableArray" id="KS3-4v-5mT"/>
+                        <outletCollection property="buttons" destination="XgB-uk-S0K" collectionClass="NSMutableArray" id="caH-oj-5tS"/>
+                        <outletCollection property="buttons" destination="XzN-un-QuB" collectionClass="NSMutableArray" id="r7V-4v-kJ0"/>
                         <outletCollection property="buttons" destination="OLO-SZ-RQl" collectionClass="NSMutableArray" id="fuM-HK-clf"/>
                         <outletCollection property="buttons" destination="fAX-0K-TIR" collectionClass="NSMutableArray" id="HHh-lp-VoZ"/>
-                        <outletCollection property="buttons" destination="v9p-VO-Ehz" collectionClass="NSMutableArray" id="swn-h5-KeW"/>
-                        <outletCollection property="buttons" destination="D6x-6B-Mx4" collectionClass="NSMutableArray" id="DDs-FV-rmu"/>
                         <outletCollection property="buttons" destination="R3R-QO-88Y" collectionClass="NSMutableArray" id="Wrq-8I-HoA"/>
                         <outletCollection property="buttons" destination="dpe-bw-S7F" collectionClass="NSMutableArray" id="qYx-qJ-hXE"/>
                         <outletCollection property="buttons" destination="gJR-Ko-w0l" collectionClass="NSMutableArray" id="5cn-W0-wbS"/>
+                        <outletCollection property="buttons" destination="D6x-6B-Mx4" collectionClass="NSMutableArray" id="DDs-FV-rmu"/>
+                        <outletCollection property="buttons" destination="v9p-VO-Ehz" collectionClass="NSMutableArray" id="swn-h5-KeW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0z4-i9-nqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

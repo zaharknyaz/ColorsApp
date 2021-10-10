@@ -10,8 +10,16 @@ import UIKit
 class GameViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var newGameButton: UIButton!
     
-    lazy var game = Game(countItems: buttons.count)
+    
+    lazy var game = Game(countItems: buttons.count, time: 90) { [weak self] (status, time) in
+        guard let self = self else {return}
+        
+        self.timerLabel.text = time.secondsToString()
+        self.updateInfoGame(with: status)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +28,14 @@ class GameViewController: UIViewController {
     
     @IBAction func pressButton(_ sender: UIButton) {
         guard let buttonIndex = buttons.firstIndex(of: sender) else {return}
-        sender.layer.borderWidth = 8
-        sender.layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
         game.check(index: buttonIndex)
         updateUI()
+    }
+    
+    @IBAction func newGame(_ sender: UIButton) {
+        game.newGame()
+        sender.isHidden = true
+        setupScreen()
     }
     
     private func setupScreen() {
@@ -33,16 +45,40 @@ class GameViewController: UIViewController {
             let blueColor = game.items[index].blueColor
             buttons[index].backgroundColor = UIColor(red: CGFloat(redColor/255), green: CGFloat(greenColor/255), blue: CGFloat(blueColor/255), alpha: 1)
             buttons[index].isHidden = false
+            buttons[index].layer.borderWidth = 0
+            //buttons[index].layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
+            //buttons[index].alpha = 1
+            //buttons[index].isEnabled = true
         }
     }
     
     private func updateUI() {
         for index in game.items.indices {
-            buttons[index].isHidden = game.items[index].isSelected
+            if game.items[index].isSelected {
+                buttons[index].layer.borderWidth = 8
+                buttons[index].layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
+            }
+            buttons[index].isHidden = game.items[index].isFound
+            //buttons[index].alpha = game.items[index].isFound ? 0:1
+            //buttons[index].isEnabled = game.items[index].isFound
         }
-        if game.status == .win {
+        updateInfoGame(with: game.status)
+    }
+    
+    private func updateInfoGame(with status: statusGame) {
+        switch status {
+        case .start:
+            statusLabel.text = "Игра началась!!!"
+            statusLabel.textColor = .black
+            newGameButton.isHidden = true
+        case .win:
             statusLabel.text = "Вы выиграли!!!"
             statusLabel.textColor = .green
+            newGameButton.isHidden = false
+        case .lose:
+            statusLabel.text = "Вы проиграли!!!"
+            statusLabel.textColor = .red
+            newGameButton.isHidden = false
         }
     }
 }
