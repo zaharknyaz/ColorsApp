@@ -14,7 +14,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var newGameButton: UIButton!
     
     
-    lazy var game = Game(countItems: buttons.count, time: 90) { [weak self] (status, time) in
+    lazy var game = Game(countItems: buttons.count, time: 30) { [weak self] (status, time) in
         guard let self = self else {return}
         
         self.timerLabel.text = time.secondsToString()
@@ -46,9 +46,8 @@ class GameViewController: UIViewController {
             buttons[index].backgroundColor = UIColor(red: CGFloat(redColor/255), green: CGFloat(greenColor/255), blue: CGFloat(blueColor/255), alpha: 1)
             buttons[index].isHidden = false
             buttons[index].layer.borderWidth = 0
-            //buttons[index].layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
-            //buttons[index].alpha = 1
-            //buttons[index].isEnabled = true
+            buttons[index].alpha = 1
+            buttons[index].isEnabled = true
         }
     }
     
@@ -58,9 +57,24 @@ class GameViewController: UIViewController {
                 buttons[index].layer.borderWidth = 8
                 buttons[index].layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
             }
-            buttons[index].isHidden = game.items[index].isFound
-            //buttons[index].alpha = game.items[index].isFound ? 0:1
-            //buttons[index].isEnabled = game.items[index].isFound
+            //buttons[index].isHidden = game.items[index].isFound
+            buttons[index].alpha = game.items[index].isFound ? 0 : 1
+            buttons[index].isEnabled = !game.items[index].isFound
+            
+            if game.items[index].isError {
+                UIView.animate(withDuration: 0.3) { [weak self] in
+                    self?.buttons[index].backgroundColor = .red
+                }
+            completion: { [weak self] ( _) in
+                    let redColor = self?.game.items[index].redColor
+                    let greenColor = self?.game.items[index].greenColor
+                    let blueColor = self?.game.items[index].blueColor
+                self?.buttons[index].backgroundColor = UIColor(red: CGFloat(redColor!/255), green: CGFloat(greenColor!/255), blue: CGFloat(blueColor!/255), alpha: 1)
+                
+                    self?.game.items[index].isError = false
+                }
+            }
+            
         }
         updateInfoGame(with: game.status)
     }

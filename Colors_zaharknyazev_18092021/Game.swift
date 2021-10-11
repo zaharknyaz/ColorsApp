@@ -20,8 +20,9 @@ class Game{
         var redColor: Float
         var greenColor: Float
         var blueColor: Float
-        var isSelected: Bool = false
-        var isFound: Bool = false
+        var isSelected = false
+        var isFound = false
+        var isError = false
         
         static func ==(lhs: Item, rhs: Item) -> Bool {
                 return lhs.redColor == rhs.redColor && lhs.greenColor == rhs.greenColor && lhs.blueColor == rhs.blueColor
@@ -98,19 +99,20 @@ class Game{
         
         if firstSelectedButtonIndex != nil && firstSelectedButtonIndex != index {
             if items[firstSelectedButtonIndex!] == items[index] {
-                        items[firstSelectedButtonIndex!].isFound = true
-                        items[index].isFound = true
-                        firstSelectedButtonIndex = nil
+                items[firstSelectedButtonIndex!].isFound = true
+                items[index].isFound = true
+                firstSelectedButtonIndex = nil
+            }else {
+                items[index].isError = true
             }
+        }else {
+            return
         }
     
-        let NotFoundItems = items.filter { (Item) -> Bool in
-            !Item.isFound
-        }
-       
-        if NotFoundItems.count <= 1 {
+        if items.filter({!$0.isFound}).count <= 1 {
             status = .win
         }
+
     }
     
     private func stopGame(){
