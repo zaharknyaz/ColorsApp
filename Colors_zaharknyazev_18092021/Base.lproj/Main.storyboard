@@ -388,25 +388,38 @@
                     <view key="view" contentMode="scaleToFill" id="UVg-qy-9zx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r5-cS-tMm">
+                                <rect key="frame" x="20" y="163" width="388" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tFY-Sf-MpR"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Синий" id="Les-VJ-1at">
                         <barButtonItem key="rightBarButtonItem" title="Зеленый" id="sjX-fj-aBv">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <connections>
                                 <action selector="goToGreenController:" destination="9Rj-Nk-G57" id="VF2-On-EWg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="testLabel" destination="7r5-cS-tMm" id="s1a-ej-ry0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTp-B4-btV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-1023"/>
+            <point key="canvasLocation" x="-280.37383177570092" y="-1023.110151187905"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="Xnl-iG-KSe">
             <objects>
-                <viewController storyboardIdentifier="greenVC" id="Kce-aV-KAb" customClass="GreenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="greenVC" id="Kce-aV-KAb" customClass="GreenViewController" customModule="Colors_zaharknyazev_18092021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rKW-Tb-LaY">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
