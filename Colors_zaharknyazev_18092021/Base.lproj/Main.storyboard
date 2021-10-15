@@ -428,6 +428,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaP-40-yZ8">
                                                     <rect key="frame" x="357" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <connections>
+                                                        <action selector="changeTimerState:" destination="tCf-87-iND" eventType="valueChanged" id="roa-m1-3Ju"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -480,6 +483,9 @@
                                                     <rect key="frame" x="114" y="6" width="202" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Настройки по-умолчанию"/>
+                                                    <connections>
+                                                        <action selector="resetSettings:" destination="tCf-87-iND" eventType="touchUpInside" id="AII-sE-w81"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -497,6 +503,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Настройки" id="NWx-SP-Cjj"/>
+                    <connections>
+                        <outlet property="switchTimer" destination="zaP-40-yZ8" id="2Tq-U0-3cy"/>
+                        <outlet property="timeGameLabel" destination="lhX-3a-HPi" id="pH8-OW-tpq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLB-Qt-8Ik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

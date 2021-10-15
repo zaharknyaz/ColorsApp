@@ -14,32 +14,38 @@ class SelectTimeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView?.dataSource = self
+            tableView?.delegate = self
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tableView.reloadData()
     }
 
 }
 
-extension SelectTimeViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
-    }
+extension SelectTimeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 5
-        }
-        return 20
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
-        cell.textLabel?.text = "section - \(indexPath.section) row - \(indexPath.row)"
+        cell.textLabel?.text = String(data[indexPath.row])
         return cell
         //17:54 про reusable cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+//        UserDefaults.standard.setValue(data[indexPath.row], forKey: "timeForGame")
+//        UserDefaults.standard.integer(forKey: "timeForGame")
+//        if UserDefaults.standard.object(forKey: "timeForGame") != nil {
+//
+//        }
+        Settings.shared.currentSettings.timeForGame = data[indexPath.row]
+        navigationController?.popViewController(animated: true)
     }
     
 }
