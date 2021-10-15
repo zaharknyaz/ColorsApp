@@ -35,9 +35,18 @@ class Game{
     var items: [Item] = []
     private var countItems: Int
     
+    var isNewRecord = false
     var status: statusGame = .start{
         didSet{
             if status != .start {
+                if status == .win {
+                    let newRecord = timeForGame - secondsGame
+                    let record = UserDefaults.standard.integer(forKey: keysUserDefaults.recordGame)
+                    if record == 0 || newRecord < record{
+                        UserDefaults.standard.setValue(newRecord, forKey: keysUserDefaults.recordGame)
+                        isNewRecord = true
+                    }
+                }
                 stopGame()
             }
         }
@@ -66,6 +75,7 @@ class Game{
     }
     
     private func setupGame(){
+        isNewRecord = false
         var redColor = redColorData.shuffled()
         var greenColor = greenColorData.shuffled()
         var blueColor = blueColorData.shuffled()
@@ -83,7 +93,7 @@ class Game{
         if Settings.shared.currentSettings.timerState {
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {[weak self] (_) in
                 self?.secondsGame -= 1
-                print("Timer")
+                //print("Timer")
             })
         }
         
