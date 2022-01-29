@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ow6-RX-cuM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ow6-RX-cuM">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -103,158 +103,163 @@
                                 <rect key="frame" x="10" y="180.66666666666669" width="408" height="701.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-lm-Iet">
-                                        <rect key="frame" x="0.0" y="0.0" width="408" height="132.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="108.66666666666667"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sq-rF-IKn">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="132.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.66666666666667"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="XIQ-H8-kpO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ5-18-04L">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.98259460034013602" green="0.33088860544217685" blue="0.23331207482993196" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="S6C-ni-fI2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-3d-Jjn">
-                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="132.33333333333334"/>
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.66666666666667"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CSD-pf-FNW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-RX-GhA">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="KQh-aZ-dLE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct3-aJ-j6R">
-                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="132.33333333333334"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                                <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bHa-yB-2P7"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-hy-TnT">
-                                        <rect key="frame" x="0.0" y="142.33333333333331" width="408" height="132.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="118.66666666666666" width="408" height="108.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYC-ao-xXu">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="132.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="SMg-0Y-jrM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0A-W4-fqZ">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.33333333333333"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Kpg-vs-OUU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-KO-0Pe">
-                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="132.33333333333334"/>
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="zjF-0W-or8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ii-fn-RVh">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.33333333333333"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="ker-HK-0Dj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-sV-wLi">
-                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="132.33333333333334"/>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CwJ-6C-Oqd"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-y4-sM0">
-                                        <rect key="frame" x="0.0" y="284.66666666666663" width="408" height="132"/>
+                                        <rect key="frame" x="0.0" y="237.00000000000003" width="408" height="108.66666666666666"/>
                                         <subviews>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaw-Og-hCY">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.31122448979591838" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="T1L-mL-R13"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD2-e5-SwI">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="132"/>
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.89963329081632648" green="0.332562712585034" blue="0.79320790816326525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="oJT-ib-OZ0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-MR-5js">
-                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="132"/>
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.66369047619047616" green="0.90274234693877553" blue="0.34192833383353333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="rmg-qR-ZoX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v27-Cz-FIb">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="132"/>
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="1" green="0.90274234693877553" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="dos-2K-y2n"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-E1-8rO">
-                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="132"/>
-                                                <color key="backgroundColor" red="0.20793473639455781" green="0.076344600340136057" blue="0.77186968537414968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CCd-8h-sfN"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3n8-aW-lNS">
-                                        <rect key="frame" x="0.0" y="426.66666666666674" width="408" height="132.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="355.66666666666674" width="408" height="108.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-un-QuB">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="132.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.98511904761904767" green="0.44842155612244899" blue="0.19913903061224489" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="Sbl-pG-kkL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-uk-S0K">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.57695578231292521" green="0.56097782863145262" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="lXu-oz-3xs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYh-ct-jjg">
-                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="132.33333333333334"/>
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.43029868197278914" green="0.0" blue="0.22467580782312926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="bKt-x2-Blc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-SZ-RQl">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
                                                 <color key="backgroundColor" red="0.30739795918367346" green="0.56954187925170063" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="CDi-JZ-xW8"/>
                                                 </connections>
                                             </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nDN-NE-fJj">
+                                        <rect key="frame" x="0.0" y="474.33333333333331" width="408" height="108.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-6B-Mx4">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.33333333333333"/>
+                                                <color key="backgroundColor" red="0.064652423469387751" green="0.090454931972789115" blue="0.87848107993197277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="jnU-f6-7Nb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-QO-88Y">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.33333333333333"/>
+                                                <color key="backgroundColor" red="0.76087278661464586" green="0.91810849339735889" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="UBH-2O-Buv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-bw-S7F">
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.33333333333333"/>
+                                                <color key="backgroundColor" red="0.95241190226090455" green="0.91810849339735889" blue="0.61354698129251706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="csc-76-zoM"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAX-0K-TIR">
-                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="132.33333333333334"/>
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.33333333333333"/>
                                                 <color key="backgroundColor" red="0.61801126700680276" green="0.56954187925170063" blue="0.22935267857142858" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
                                                     <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="YfC-ae-PlG"/>
@@ -262,42 +267,35 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nDN-NE-fJj">
-                                        <rect key="frame" x="0.0" y="569" width="408" height="132.33333333333337"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-4X-KUZ">
+                                        <rect key="frame" x="0.0" y="592.66666666666674" width="408" height="108.66666666666663"/>
                                         <subviews>
-                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-VO-Ehz">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="132.33333333333334"/>
-                                                <color key="backgroundColor" red="0.32126913265306123" green="0.13509778911564627" blue="0.46776679421768708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY9-ij-WVH">
+                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="108.66666666666667"/>
+                                                <color key="backgroundColor" red="0.57118941326591832" green="0.44509991496319729" blue="0.88159013602244907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="9mG-qh-FvI"/>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="P7r-Hr-6YQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-6B-Mx4">
-                                                <rect key="frame" x="83.666666666666657" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
-                                                <color key="backgroundColor" red="0.064652423469387751" green="0.090454931972789115" blue="0.87848107993197277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlZ-no-ul9">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
+                                                <color key="backgroundColor" red="0.19938256551156464" green="0.9181084934" blue="0.18883209528911571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="jnU-f6-7Nb"/>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="hZx-cP-8JJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-QO-88Y">
-                                                <rect key="frame" x="167.33333333333334" y="0.0" width="73.333333333333343" height="132.33333333333334"/>
-                                                <color key="backgroundColor" red="0.76087278661464586" green="0.91810849339735889" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-VT-n7e">
+                                                <rect key="frame" x="208.99999999999997" y="0.0" width="94.666666666666657" height="108.66666666666667"/>
+                                                <color key="backgroundColor" red="0.71030412168775514" green="0.0" blue="0.080729166674149602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="UBH-2O-Buv"/>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="h6W-yk-Ksw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpe-bw-S7F">
-                                                <rect key="frame" x="250.66666666666666" y="0.0" width="73.666666666666657" height="132.33333333333334"/>
-                                                <color key="backgroundColor" red="0.95241190226090455" green="0.91810849339735889" blue="0.61354698129251706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEb-OZ-J64">
+                                                <rect key="frame" x="313.66666666666669" y="0.0" width="94.333333333333314" height="108.66666666666667"/>
+                                                <color key="backgroundColor" red="0.99593431121768716" green="0.79068346093265307" blue="0.2293526786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="csc-76-zoM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJR-Ko-w0l">
-                                                <rect key="frame" x="334.33333333333331" y="0.0" width="73.666666666666686" height="132.33333333333334"/>
-                                                <color key="backgroundColor" red="0.013578869047619048" green="0.47571215986394561" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <connections>
-                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="0OH-I1-XkC"/>
+                                                    <action selector="pressButton:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="8OB-uk-eIt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -325,13 +323,10 @@
                         <outletCollection property="buttons" destination="Jda-3d-Jjn" collectionClass="NSMutableArray" id="OHg-To-B2c"/>
                         <outletCollection property="buttons" destination="MJ5-18-04L" collectionClass="NSMutableArray" id="Z4r-qb-V0M"/>
                         <outletCollection property="buttons" destination="bcm-RX-GhA" collectionClass="NSMutableArray" id="3FA-4c-Acd"/>
-                        <outletCollection property="buttons" destination="Ct3-aJ-j6R" collectionClass="NSMutableArray" id="qZe-kT-kZe"/>
                         <outletCollection property="buttons" destination="iYC-ao-xXu" collectionClass="NSMutableArray" id="vDq-Ts-JdR"/>
-                        <outletCollection property="buttons" destination="Ru3-sV-wLi" collectionClass="NSMutableArray" id="wJm-XI-f3U"/>
                         <outletCollection property="buttons" destination="5ii-fn-RVh" collectionClass="NSMutableArray" id="5EE-vB-rJ2"/>
                         <outletCollection property="buttons" destination="L0A-W4-fqZ" collectionClass="NSMutableArray" id="7RH-R8-Jjf"/>
                         <outletCollection property="buttons" destination="7eV-KO-0Pe" collectionClass="NSMutableArray" id="PWK-nz-QeZ"/>
-                        <outletCollection property="buttons" destination="ZBC-E1-8rO" collectionClass="NSMutableArray" id="0N4-9a-njX"/>
                         <outletCollection property="buttons" destination="eD2-e5-SwI" collectionClass="NSMutableArray" id="MuD-KG-VYK"/>
                         <outletCollection property="buttons" destination="v27-Cz-FIb" collectionClass="NSMutableArray" id="fzA-KY-stP"/>
                         <outletCollection property="buttons" destination="iaw-Og-hCY" collectionClass="NSMutableArray" id="84X-DJ-qtZ"/>
@@ -340,12 +335,14 @@
                         <outletCollection property="buttons" destination="XgB-uk-S0K" collectionClass="NSMutableArray" id="caH-oj-5tS"/>
                         <outletCollection property="buttons" destination="XzN-un-QuB" collectionClass="NSMutableArray" id="r7V-4v-kJ0"/>
                         <outletCollection property="buttons" destination="OLO-SZ-RQl" collectionClass="NSMutableArray" id="fuM-HK-clf"/>
-                        <outletCollection property="buttons" destination="fAX-0K-TIR" collectionClass="NSMutableArray" id="HHh-lp-VoZ"/>
                         <outletCollection property="buttons" destination="R3R-QO-88Y" collectionClass="NSMutableArray" id="Wrq-8I-HoA"/>
                         <outletCollection property="buttons" destination="dpe-bw-S7F" collectionClass="NSMutableArray" id="qYx-qJ-hXE"/>
-                        <outletCollection property="buttons" destination="gJR-Ko-w0l" collectionClass="NSMutableArray" id="5cn-W0-wbS"/>
                         <outletCollection property="buttons" destination="D6x-6B-Mx4" collectionClass="NSMutableArray" id="DDs-FV-rmu"/>
-                        <outletCollection property="buttons" destination="v9p-VO-Ehz" collectionClass="NSMutableArray" id="swn-h5-KeW"/>
+                        <outletCollection property="buttons" destination="fAX-0K-TIR" collectionClass="NSMutableArray" id="HHh-lp-VoZ"/>
+                        <outletCollection property="buttons" destination="bY9-ij-WVH" collectionClass="NSMutableArray" id="wi2-0j-qqb"/>
+                        <outletCollection property="buttons" destination="GlZ-no-ul9" collectionClass="NSMutableArray" id="V3Z-vT-gSR"/>
+                        <outletCollection property="buttons" destination="wmJ-VT-n7e" collectionClass="NSMutableArray" id="4QN-gz-IbL"/>
+                        <outletCollection property="buttons" destination="QEb-OZ-J64" collectionClass="NSMutableArray" id="eDZ-Vm-lj6"/>
                         <segue destination="PNj-AJ-OcW" kind="presentation" identifier="recordVC" modalPresentationStyle="fullScreen" id="ljk-EA-VvO"/>
                     </connections>
                 </viewController>
@@ -593,9 +590,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

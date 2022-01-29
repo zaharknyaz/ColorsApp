@@ -123,7 +123,7 @@ class GameViewController: UIViewController {
         }
         
         let showRecord = UIAlertAction(title: "Посмотреть рекорд", style: .default) { [weak self] (_) in
-            // TODO: - RECORD VIEW CONTROLLER
+            // TO DO: - RECORD VIEW CONTROLLER
             self?.performSegue(withIdentifier: "recordVC", sender: nil)
         }
         
