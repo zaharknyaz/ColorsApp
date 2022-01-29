@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "colors_launchscreen100_100.png",
+      "filename" : "colorslogo_200x200.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,6 @@
           "value" : "dark"
         }
       ],
-      "filename" : "png-transparent-rgb-color-model-computer-icons-icon-design-business-orange-people-computer-program-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

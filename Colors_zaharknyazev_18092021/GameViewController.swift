@@ -70,12 +70,18 @@ class GameViewController: UIViewController {
                 UIView.animate(withDuration: 0.3) { [weak self] in
                     self?.buttons[index].backgroundColor = .red
                 }
-            completion: { [weak self] ( _) in
+                
+                completion: { [weak self] ( _) in
+                                
+                UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: .allowAnimatedContent, animations: {
+                    self?.buttons[index].transform = CGAffineTransform(rotationAngle: CGFloat.pi/50)
+                }) { (bool) in
+                    self?.buttons[index].transform = .identity
                     let redColor = self?.game.items[index].redColor
                     let greenColor = self?.game.items[index].greenColor
                     let blueColor = self?.game.items[index].blueColor
-                self?.buttons[index].backgroundColor = UIColor(red: CGFloat(redColor!/255), green: CGFloat(greenColor!/255), blue: CGFloat(blueColor!/255), alpha: 1)
-                
+                    self?.buttons[index].backgroundColor = UIColor(red: CGFloat(redColor!/255), green: CGFloat(greenColor!/255), blue: CGFloat(blueColor!/255), alpha: 1)
+                }
                     self?.game.items[index].isError = false
                 }
             }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ow6-RX-cuM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gQP-42-50j">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -550,7 +550,7 @@
         <!--Navigation Controller-->
         <scene sceneID="FOz-au-ozC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ow6-RX-cuM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainSID" automaticallyAdjustsScrollViewInsets="NO" id="Ow6-RX-cuM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nLp-3q-vGs">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
@@ -583,11 +583,36 @@
             </objects>
             <point key="canvasLocation" x="-280.37383177570092" y="-1002.3758099352052"/>
         </scene>
+        <!--First View Controller-->
+        <scene sceneID="AdV-tH-tq5">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="gQP-42-50j" customClass="FirstViewController" customModule="View_animate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zLx-yW-7N1">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Go1-hQ-37K">
+                                <rect key="frame" x="94" y="150" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDf-tw-MX0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Go1-hQ-37K" id="V9w-IT-z79"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAi-0p-LDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2085" y="-298"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ljk-EA-VvO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="logo" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
