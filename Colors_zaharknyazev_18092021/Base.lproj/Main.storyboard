@@ -586,7 +586,7 @@
         <!--First View Controller-->
         <scene sceneID="AdV-tH-tq5">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="gQP-42-50j" customClass="FirstViewController" customModule="View_animate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="gQP-42-50j" customClass="FirstViewController" customModule="Colors_zaharknyazev_18092021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLx-yW-7N1">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

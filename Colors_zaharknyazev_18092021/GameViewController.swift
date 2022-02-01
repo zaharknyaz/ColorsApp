@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class GameViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
@@ -53,6 +54,9 @@ class GameViewController: UIViewController {
             buttons[index].layer.borderWidth = 0
             buttons[index].alpha = 1
             buttons[index].isEnabled = true
+            
+            //скругляем края кнопок
+            buttons[index].layer.cornerRadius = 15
         }
     }
     
@@ -67,6 +71,9 @@ class GameViewController: UIViewController {
             buttons[index].isEnabled = !game.items[index].isFound
             
             if game.items[index].isError {
+                //виброзвонок при ошибке
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                
                 UIView.animate(withDuration: 0.3) { [weak self] in
                     self?.buttons[index].backgroundColor = .red
                 }
