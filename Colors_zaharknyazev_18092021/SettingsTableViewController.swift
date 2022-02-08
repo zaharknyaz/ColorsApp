@@ -10,6 +10,7 @@ import UIKit
 class SettingsTableViewController: UITableViewController {
 
     @IBOutlet weak var switchTimer: UISwitch!
+    @IBOutlet weak var switchVibro: UISwitch!
     @IBOutlet weak var timeGameLabel: UILabel!
     
     
@@ -24,6 +25,10 @@ class SettingsTableViewController: UITableViewController {
 
     @IBAction func changeTimerState(_ sender: UISwitch) {
         Settings.shared.currentSettings.timerState = sender.isOn
+    }
+    
+    @IBAction func changeVibroState(_ sender: UISwitch) {
+        Settings.shared.currentSettings.vibroState = sender.isOn
     }
     
     func loadSettings() {

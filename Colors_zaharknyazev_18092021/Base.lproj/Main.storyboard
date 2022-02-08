@@ -439,8 +439,36 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="N34-1a-cEV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iCZ-K5-7oa">
                                         <rect key="frame" x="0.0" y="88.333333969116211" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iCZ-K5-7oa" id="bJg-Oe-tGB">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виброзвонок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-0S-3gO">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="106" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agy-21-18B">
+                                                    <rect key="frame" x="357" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <connections>
+                                                        <action selector="changeVibroState:" destination="tCf-87-iND" eventType="valueChanged" id="PFA-7a-X2t"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hcj-0S-3gO" firstAttribute="leading" secondItem="bJg-Oe-tGB" secondAttribute="leadingMargin" id="TN8-3K-bxs"/>
+                                                <constraint firstAttribute="trailing" secondItem="agy-21-18B" secondAttribute="trailing" constant="22" id="W9b-Ku-Uqe"/>
+                                                <constraint firstItem="agy-21-18B" firstAttribute="centerY" secondItem="bJg-Oe-tGB" secondAttribute="centerY" id="dZz-qb-hAN"/>
+                                                <constraint firstItem="hcj-0S-3gO" firstAttribute="centerY" secondItem="bJg-Oe-tGB" secondAttribute="centerY" id="i9s-RM-vNs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="N34-1a-cEV">
+                                        <rect key="frame" x="0.0" y="132.00000190734863" width="428" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N34-1a-cEV" id="LkU-V8-ROz">
                                             <rect key="frame" x="0.0" y="0.0" width="398.33333333333331" height="43.666667938232422"/>
@@ -471,7 +499,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uiV-ol-3D5">
-                                        <rect key="frame" x="0.0" y="132.00000190734863" width="428" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="175.66666984558105" width="428" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uiV-ol-3D5" id="Sqv-0L-aSj">
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
@@ -502,7 +530,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Настройки" id="NWx-SP-Cjj"/>
                     <connections>
-                        <outlet property="switchTimer" destination="zaP-40-yZ8" id="2Tq-U0-3cy"/>
+                        <outlet property="switchTimer" destination="zaP-40-yZ8" id="VGn-hO-RWR"/>
+                        <outlet property="switchVibro" destination="agy-21-18B" id="gFd-5m-EU6"/>
                         <outlet property="timeGameLabel" destination="lhX-3a-HPi" id="pH8-OW-tpq"/>
                     </connections>
                 </tableViewController>

@@ -14,6 +14,7 @@ enum keysUserDefaults {
 
 struct settingsGame: Codable {
     var timerState: Bool
+    var vibroState: Bool
     var timeForGame: Int
 }
 
@@ -21,7 +22,7 @@ class Settings {
     //так как static, то экземпляр Settings не будет уничтожен пока программа работает, singleton
     static var shared = Settings()
     
-    private let defaultSettings = settingsGame(timerState: true, timeForGame: 30)
+    private let defaultSettings = settingsGame(timerState: true, vibroState: true, timeForGame: 30)
     var currentSettings: settingsGame {
         get {
             if let data = UserDefaults.standard.object(forKey: keysUserDefaults.settingsGame) as? Data {

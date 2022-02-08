@@ -71,8 +71,10 @@ class GameViewController: UIViewController {
             buttons[index].isEnabled = !game.items[index].isFound
             
             if game.items[index].isError {
-                //виброзвонок при ошибке
-                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                if Settings.shared.currentSettings.vibroState {
+                    //виброзвонок при ошибке
+                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                }
                 
                 UIView.animate(withDuration: 0.3) { [weak self] in
                     self?.buttons[index].backgroundColor = .red
