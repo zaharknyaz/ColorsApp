@@ -66,7 +66,7 @@ class GameViewController: UIViewController {
                 buttons[index].layer.borderWidth = 8
                 buttons[index].layer.borderColor = UIColor(red:255/255, green:0/255, blue:0/255, alpha: 1).cgColor
             }
-            //buttons[index].isHidden = game.items[index].isFound
+            
             buttons[index].alpha = game.items[index].isFound ? 0 : 1
             buttons[index].isEnabled = !game.items[index].isFound
             
@@ -138,7 +138,6 @@ class GameViewController: UIViewController {
         }
         
         let showRecord = UIAlertAction(title: "Посмотреть рекорд", style: .default) { [weak self] (_) in
-            // TO DO: - RECORD VIEW CONTROLLER
             self?.performSegue(withIdentifier: "recordVC", sender: nil)
         }
         
@@ -154,9 +153,7 @@ class GameViewController: UIViewController {
         alert.addAction(cancelAction)
         
         if let popover = alert.popoverPresentationController {
-            popover.sourceView = statusLabel //self.view
-//            popover.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-//            popover.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
+            popover.sourceView = statusLabel
         }
         
         present(alert, animated: true, completion: nil)

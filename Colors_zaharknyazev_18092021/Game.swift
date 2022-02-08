@@ -93,7 +93,6 @@ class Game{
         if Settings.shared.currentSettings.timerState {
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {[weak self] (_) in
                 self?.secondsGame -= 1
-                //print("Timer")
             })
         }
         

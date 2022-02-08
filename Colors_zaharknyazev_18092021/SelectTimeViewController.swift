@@ -19,7 +19,6 @@ class SelectTimeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.reloadData()
     }
 
 }
@@ -34,16 +33,10 @@ extension SelectTimeViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
         cell.textLabel?.text = String(data[indexPath.row])
         return cell
-        //17:54 про reusable cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        UserDefaults.standard.setValue(data[indexPath.row], forKey: "timeForGame")
-//        UserDefaults.standard.integer(forKey: "timeForGame")
-//        if UserDefaults.standard.object(forKey: "timeForGame") != nil {
-//
-//        }
         Settings.shared.currentSettings.timeForGame = data[indexPath.row]
         navigationController?.popViewController(animated: true)
     }

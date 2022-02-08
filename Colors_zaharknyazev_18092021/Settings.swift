@@ -35,11 +35,6 @@ class Settings {
             }
         }
         set {
-//            do {
-//                let data = try PropertyListEncoder().encode(newValue)
-//            }catch {
-//                print(error)
-//            }
             if let data = try? PropertyListEncoder().encode(newValue) {
                 UserDefaults.standard.setValue(data, forKey: keysUserDefaults.settingsGame)
             }

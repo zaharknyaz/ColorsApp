@@ -18,6 +18,7 @@ class FirstViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.imageView.layer.cornerRadius = 15
         
         UIView.animate(withDuration: 1.5, delay: 0.3, usingSpringWithDamping: 0.3, initialSpringVelocity: 5, options: .allowAnimatedContent, animations: {
             self.imageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
