@@ -307,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = R2K7DDWC4H;
 				INFOPLIST_FILE = "$(SRCROOT)/Colors_zaharknyazev_18092021/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -314,6 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.knyazevzahar.colorsgameapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -327,6 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = R2K7DDWC4H;
 				INFOPLIST_FILE = "$(SRCROOT)/Colors_zaharknyazev_18092021/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -334,6 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.knyazevzahar.colorsgameapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
