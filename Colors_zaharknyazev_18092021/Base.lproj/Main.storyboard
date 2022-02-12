@@ -90,9 +90,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqZ-ws-5l1">
-                                        <rect key="frame" x="6.3333333333333144" y="62.666666666666657" width="113" height="0.0"/>
+                                        <rect key="frame" x="11.666666666666657" y="62.666666666666657" width="102" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Новая игра"/>
+                                        <state key="normal" title="New game"/>
                                         <connections>
                                             <action selector="newGame:" destination="UYr-Sy-lfH" eventType="touchUpInside" id="KbW-Wz-ubw"/>
                                         </connections>
