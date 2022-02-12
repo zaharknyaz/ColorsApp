@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A19589C2715E24600AC2FAB /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19589B2715E24600AC2FAB /* YellowViewController.swift */; };
-		3A19589E2715E68800AC2FAB /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19589D2715E68800AC2FAB /* BlueViewController.swift */; };
-		3A1958A02715EB2100AC2FAB /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19589F2715EB2100AC2FAB /* GreenViewController.swift */; };
 		3A61461B2700E72B000AE26F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61461A2700E72B000AE26F /* Game.swift */; };
 		3A8085D026F5F94C006F0750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8085CF26F5F94C006F0750 /* AppDelegate.swift */; };
 		3A8085D726F5F94C006F0750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8085D526F5F94C006F0750 /* Main.storyboard */; };
@@ -24,9 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A19589B2715E24600AC2FAB /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
-		3A19589D2715E68800AC2FAB /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		3A19589F2715EB2100AC2FAB /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		3A61461A2700E72B000AE26F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3A8085CC26F5F94C006F0750 /* Colors_zaharknyazev_18092021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors_zaharknyazev_18092021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8085CF26F5F94C006F0750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,9 +71,6 @@
 				3A8085D826F5F94D006F0750 /* Assets.xcassets */,
 				3AA158E926FBC23C007D3855 /* GameViewController.swift */,
 				3A61461A2700E72B000AE26F /* Game.swift */,
-				3A19589B2715E24600AC2FAB /* YellowViewController.swift */,
-				3A19589D2715E68800AC2FAB /* BlueViewController.swift */,
-				3A19589F2715EB2100AC2FAB /* GreenViewController.swift */,
 				3A86880B2717517100855F64 /* SelectTimeViewController.swift */,
 				3A86880D2717526700855F64 /* SettingsTableViewController.swift */,
 				3A84D32C2719C42800C9B7B3 /* Settings.swift */,
@@ -169,12 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1958A02715EB2100AC2FAB /* GreenViewController.swift in Sources */,
-				3A19589C2715E24600AC2FAB /* YellowViewController.swift in Sources */,
 				3AA158EA26FBC23C007D3855 /* GameViewController.swift in Sources */,
 				3A61461B2700E72B000AE26F /* Game.swift in Sources */,
 				3A86880E2717526700855F64 /* SettingsTableViewController.swift in Sources */,
-				3A19589E2715E68800AC2FAB /* BlueViewController.swift in Sources */,
 				3A84D32D2719C42800C9B7B3 /* Settings.swift in Sources */,
 				3A84D32F2719F24000C9B7B3 /* RecordViewController.swift in Sources */,
 				3A86880C2717517100855F64 /* SelectTimeViewController.swift in Sources */,

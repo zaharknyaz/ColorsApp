@@ -32,7 +32,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     func loadSettings() {
-        timeGameLabel.text = "\(Settings.shared.currentSettings.timeForGame) сек"
+        timeGameLabel.text = "\(Settings.shared.currentSettings.timeForGame) sec"
         switchTimer.isOn = Settings.shared.currentSettings.timerState
         switchVibro.isOn = Settings.shared.currentSettings.vibroState
     }

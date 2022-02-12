@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Меню-->
+        <!--Menu-->
         <scene sceneID="NUv-hD-wjV">
             <objects>
                 <viewController id="2KJ-3T-wkA" sceneMemberID="viewController">
@@ -18,12 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="99R-Of-ays">
-                                <rect key="frame" x="135.66666666666666" y="392" width="156.99999999999997" height="196"/>
+                                <rect key="frame" x="142" y="392" width="144" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbZ-bV-yuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="45.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="45.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Новая игра">
+                                        <buttonConfiguration key="configuration" style="plain" title="New game">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -31,9 +31,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYm-Rx-t8Y">
-                                        <rect key="frame" x="1.6666666666666856" y="75.333333333333314" width="153.33333333333334" height="45.333333333333343"/>
+                                        <rect key="frame" x="13.666666666666664" y="75.333333333333314" width="116.66666666666669" height="45.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Настройки">
+                                        <buttonConfiguration key="configuration" style="plain" title="Settings">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -41,9 +41,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsQ-62-g93">
-                                        <rect key="frame" x="23.333333333333336" y="150.66666666666663" width="110.33333333333331" height="45.333333333333343"/>
+                                        <rect key="frame" x="20.33333333333335" y="150.66666666666663" width="103.66666666666669" height="45.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Рекорд">
+                                        <buttonConfiguration key="configuration" style="plain" title="Record">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -60,7 +60,7 @@
                             <constraint firstItem="99R-Of-ays" firstAttribute="centerY" secondItem="r9O-Kl-5MU" secondAttribute="centerY" id="j4i-E3-wzx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Меню" id="fD8-f2-kFt"/>
+                    <navigationItem key="navigationItem" title="Menu" id="fD8-f2-kFt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tK6-f9-d0n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,22 +75,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-OV-eDf">
-                                <rect key="frame" x="135.33333333333337" y="108.00000000000001" width="157.66666666666663" height="62.666666666666671"/>
+                                <rect key="frame" x="151.33333333333334" y="108.00000000000001" width="125.33333333333334" height="62.666666666666671"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра началась" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C37-fF-PRM">
-                                        <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="26.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game starts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C37-fF-PRM">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.33333333333333" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH1-Va-d4j">
-                                        <rect key="frame" x="73.333333333333314" y="36.333333333333343" width="10.666666666666671" height="26.333333333333329"/>
+                                        <rect key="frame" x="57.333333333333314" y="36.333333333333343" width="10.666666666666671" height="26.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqZ-ws-5l1">
-                                        <rect key="frame" x="22.333333333333314" y="62.666666666666657" width="113" height="0.0"/>
+                                        <rect key="frame" x="6.3333333333333144" y="62.666666666666657" width="113" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Новая игра"/>
                                         <connections>
@@ -304,7 +304,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q0w-f6-Z8i"/>
-                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Nuz-OV-eDf" firstAttribute="top" secondItem="q0w-f6-Z8i" secondAttribute="top" constant="20" id="NMs-ju-XnU"/>
                             <constraint firstItem="q0w-f6-Z8i" firstAttribute="bottom" secondItem="Rdv-9m-7ty" secondAttribute="bottom" constant="10" id="V7v-4r-DGb"/>
@@ -400,7 +400,7 @@
             </objects>
             <point key="canvasLocation" x="-1180.3738317757009" y="-1696.3282937365011"/>
         </scene>
-        <!--Настройки-->
+        <!--Settings-->
         <scene sceneID="4UX-CP-nUO">
             <objects>
                 <tableViewController id="tCf-87-iND" customClass="SettingsTableViewController" customModule="Colors_zaharknyazev_18092021" customModuleProvider="target" sceneMemberID="viewController">
@@ -418,8 +418,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Таймер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kk-B2-npM">
-                                                    <rect key="frame" x="20" y="11.333333333333336" width="61" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kk-B2-npM">
+                                                    <rect key="frame" x="19.999999999999996" y="11.333333333333336" width="43.666666666666657" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -446,8 +446,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виброзвонок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-0S-3gO">
-                                                    <rect key="frame" x="20" y="11.333333333333336" width="106" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-0S-3gO">
+                                                    <rect key="frame" x="20.000000000000004" y="11.333333333333336" width="40.333333333333343" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -474,13 +474,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="398.33333333333331" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время игры" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-mO-eXe">
-                                                    <rect key="frame" x="20" y="11.333333333333336" width="96" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-mO-eXe">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="82.666666666666671" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 сек" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhX-3a-HPi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhX-3a-HPi">
                                                     <rect key="frame" x="351.33333333333331" y="14.333333333333336" width="39" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -508,7 +508,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvM-FC-2LL">
                                                     <rect key="frame" x="114" y="6" width="202" height="31"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Настройки по-умолчанию"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Default settings"/>
                                                     <connections>
                                                         <action selector="resetSettings:" destination="tCf-87-iND" eventType="touchUpInside" id="AII-sE-w81"/>
                                                     </connections>
@@ -528,7 +528,7 @@
                             <outlet property="delegate" destination="tCf-87-iND" id="Zsa-SP-k5m"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Настройки" id="NWx-SP-Cjj"/>
+                    <navigationItem key="navigationItem" title="Settings" id="NWx-SP-Cjj"/>
                     <connections>
                         <outlet property="switchTimer" destination="zaP-40-yZ8" id="VGn-hO-RWR"/>
                         <outlet property="switchVibro" destination="agy-21-18B" id="gFd-5m-EU6"/>
@@ -539,7 +539,7 @@
             </objects>
             <point key="canvasLocation" x="-1180" y="-1002"/>
         </scene>
-        <!--Рекорд-->
+        <!--Record-->
         <scene sceneID="AJ2-bR-c5E">
             <objects>
                 <viewController id="N1p-VY-iNi" customClass="RecordViewController" customModule="Colors_zaharknyazev_18092021" customModuleProvider="target" sceneMemberID="viewController">
@@ -561,7 +561,7 @@
                             <constraint firstItem="RqM-dO-smr" firstAttribute="centerY" secondItem="M0I-gs-2MZ" secondAttribute="centerY" id="txX-bP-47s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Рекорд" id="EHa-cR-w9K">
+                    <navigationItem key="navigationItem" title="Record" id="EHa-cR-w9K">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0QV-wT-bzI">
                             <connections>
                                 <action selector="closeVC:" destination="N1p-VY-iNi" id="LCm-fK-bZZ"/>

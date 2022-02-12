@@ -15,9 +15,9 @@ class RecordViewController: UIViewController {
 
         let record = UserDefaults.standard.integer(forKey: keysUserDefaults.recordGame)
         if record != 0 {
-            recordLabel.text = "Ваш рекорд - \(record)"
+            recordLabel.text = "Your record - \(record)"
         }else {
-            recordLabel.text = "Рекорд не установлен"
+            recordLabel.text = "Record not set"
         }
     }
     

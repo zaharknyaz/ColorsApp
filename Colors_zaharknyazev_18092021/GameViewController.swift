@@ -58,6 +58,8 @@ class GameViewController: UIViewController {
             //скругляем края кнопок
             buttons[index].layer.cornerRadius = 15
         }
+        
+        
     }
     
     private func updateUI() {
@@ -102,11 +104,11 @@ class GameViewController: UIViewController {
     private func updateInfoGame(with status: statusGame) {
         switch status {
         case .start:
-            statusLabel.text = "Игра началась!!!"
+            statusLabel.text = "Game starts!!!"
             statusLabel.textColor = .black
             newGameButton.isHidden = true
         case .win:
-            statusLabel.text = "Вы выиграли!!!"
+            statusLabel.text = "You won!!!"
             statusLabel.textColor = .green
             newGameButton.isHidden = false
             if game.isNewRecord {
@@ -115,7 +117,7 @@ class GameViewController: UIViewController {
                 showAlertActionSheet()
             }
         case .lose:
-            statusLabel.text = "Вы проиграли!!!"
+            statusLabel.text = "You lost!!!"
             statusLabel.textColor = .red
             newGameButton.isHidden = false
             showAlertActionSheet()
@@ -123,29 +125,29 @@ class GameViewController: UIViewController {
     }
     
     private func showAlert() {
-        let alert = UIAlertController(title: "Поздравляем!", message: "Вы установили новый рекорд", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
+        let alert = UIAlertController(title: "Congratulations!", message: "You set a new record", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
     
     private func showAlertActionSheet() {
-        let alert = UIAlertController(title: "Что Вы хотите сделать далее?", message: nil, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "What do you want to do next?", message: nil, preferredStyle: .actionSheet)
         
-        let newGame = UIAlertAction(title: "Начать новую игру", style: .default) { [weak self] (_) in
+        let newGame = UIAlertAction(title: "New game", style: .default) { [weak self] (_) in
             self?.game.newGame()
             self?.setupScreen()
         }
         
-        let showRecord = UIAlertAction(title: "Посмотреть рекорд", style: .default) { [weak self] (_) in
+        let showRecord = UIAlertAction(title: "Show record", style: .default) { [weak self] (_) in
             self?.performSegue(withIdentifier: "recordVC", sender: nil)
         }
         
-        let menuAction = UIAlertAction(title: "Перейти в меню", style: .destructive) { [weak self] (_) in
+        let menuAction = UIAlertAction(title: "Go to menu", style: .destructive) { [weak self] (_) in
             self?.navigationController?.popViewController(animated: true)
         }
         
-        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alert.addAction(newGame)
         alert.addAction(showRecord)
